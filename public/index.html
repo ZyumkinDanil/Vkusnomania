@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вкусномания — Главная</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Вкусномания</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="actions.html">Акции</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="about.html">О нас</a></li>
+        </ul>
+      </nav>
+      <button id="call-request-btn">Заказать звонок</button>
+    </div>
+  </header>
+
+ 
+
+  <main>
+    <section class="banner">
+      <div class="header-content" id="header-banner">
+        <h1>Заказывайте вкусную и быструю доставку в городе Мелитополь</h1>
+      <p>Доставка: с 09:00 до 21:00</p>
+      </div>
+    </section>
+
+    <section class="menu">
+      <h2 class="categories-title">Доступные категории</h2>
+      <div class="category-buttons">
+        <button class="category-btn" data-category="rolls" data-image="Роллы.jpg">Роллы</button>
+        <button class="category-btn" data-category="pizza" data-image="Пицца.jpg">Пицца</button>
+        <button class="category-btn" data-category="fastfood" data-image="Фастфуд.jpg">Фастфуд</button>
+        <button class="category-btn" data-category="salads" data-image="Салаты.jpg">Салаты</button>
+        <button class="category-btn" data-category="drinks" data-image="Напитки.jpg">Напитки</button>
+      </div>
+
+      <div class="products-grid">
+        <!-- Роллы (16 позиций) -->
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Филадельфия.png" alt="Филадельфия">
+          <h3>Филадельфия</h3>
+          <p class="ingredients">Лосось, сливочный сыр, огурец, рис, нори</p>
+          <p class="price">600</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Калифорния с лососем.png" alt="Калифорния с лососем">
+          <h3>Калифорния с лососем</h3>
+          <p class="ingredients">Лосось, авокадо, огурец, тобико, рис, нори</p>
+          <p class="price">550</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Акаяма.png" alt="Акаяма">
+          <h3>Акаяма</h3>
+          <p class="ingredients">Угорь, авокадо, огурец, соус унаги, кунжут</p>
+          <p class="price">500</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Венеция.jpg" alt="Венеция">
+          <h3>Венеция</h3>
+          <p class="ingredients">Креветка, авокадо, огурец, сливочный сыр, икра тобико</p>
+          <p class="price">400</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Креветка темпуро.jpg" alt="Креветка темпуро">
+          <h3>Креветка темпуро</h3>
+          <p class="ingredients">Креветка в темпуре, авокадо, огурец, спайси соус</p>
+          <p class="price">390</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Норвежский.jpg" alt="Норвежский">
+          <h3>Норвежский</h3>
+          <p class="ingredients">Лосось, сливочный сыр, авокадо, огурец, икра тобико</p>
+          <p class="price">480</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Сяке лайт.jpg" alt="Сяке лайт">
+          <h3>Сяке лайт</h3>
+          <p class="ingredients">Лосось, сливочный сыр, огурец</p>
+          <p class="price">380</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Катори.jpeg" alt="Катори">
+          <h3>Катори</h3>
+          <p class="ingredients">Угорь, сливочный сыр, авокадо, соус унаги, кунжут</p>
+          <p class="price">460</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Снежный краб, спайс соус, огурец, икра летучей рыбы.png" alt="Снежный краб">
+          <h3>Снежный краб</h3>
+          <p class="ingredients">Снежный краб, спайс соус, огурец, икра летучей рыбы</p>
+          <p class="price">400</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Тай-Пей.jpg" alt="Тай-Пей">
+          <h3>Тай-Пей</h3>
+          <p class="ingredients">Лосось, тунец, авокадо, спайс соус</p>
+          <p class="price">370</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Ролл с тунцом.png" alt="Ролл с тунцом">
+          <h3>Ролл с тунцом</h3>
+          <p class="ingredients">Тунец, авокадо, огурец, сливочный сыр</p>
+          <p class="price">200</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Ролл с лососем.png" alt="Ролл с лососем">
+          <h3>Ролл с лососем</h3>
+          <p class="ingredients">Лосось, авокадо, огурец, сливочный сыр</p>
+          <p class="price">200</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Ролл с крабом.png" alt="Ролл с крабом">
+          <h3>Ролл с крабом</h3>
+          <p class="ingredients">Краб, авокадо, огурец, сливочный сыр</p>
+          <p class="price">200</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Ролл с креветкой.jpg" alt="Ролл с креветкой">
+          <h3>Ролл с креветкой</h3>
+          <p class="ingredients">Креветка, авокадо, огурец, сливочный сыр</p>
+          <p class="price">200</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Красный дракон.jpg" alt="Красный дракон">
+          <h3>Красный дракон</h3>
+          <p class="ingredients">Лосось, угорь, авокадо, огурец, соус унаги</p>
+          <p class="price">570</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="rolls" style="display: none;">
+          <img src="Катана.jpg" alt="Катана">
+          <h3>Катана</h3>
+          <p class="ingredients">Угорь, лосось, авокадо, огурец, соус унаги</p>
+          <p class="price">480</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+
+        <!-- Пицца (10 позиций) -->
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="Пепперони.jpg" alt="Пепперони">
+          <h3>Пепперони</h3>
+          <p class="ingredients">Пепперони, моцарелла, томатный соус</p>
+          <p class="price">370</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="Маргарита.jpg" alt="Маргарита">
+          <h3>Маргарита</h3>
+          <p class="ingredients">Томатный соус, моцарелла, базилик</p>
+          <p class="price">429</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="4 сыра.png" alt="4 сыра">
+          <h3>4 сыра</h3>
+          <p class="ingredients">Моцарелла, пармезан, дор блю, чеддер</p>
+          <p class="price">450</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="Гавайская.jpg" alt="Гавайская">
+          <h3>Гавайская</h3>
+          <p class="ingredients">Курица, ананас, сыр, соус</p>
+          <p class="price">420</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="Карбонара.jpg" alt="Карбонара">
+          <h3>Карбонара</h3>
+          <p class="ingredients">Бекон, сливочный соус, пармезан, яйцо</p>
+          <p class="price">450</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="Вегетарианская.jpg" alt="Вегетарианская">
+          <h3>Вегетарианская</h3>
+          <p class="ingredients">Грибы, перец, лук, маслины, томаты</p>
+          <p class="price">400</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="Барбекю.jpg" alt="Барбекю">
+          <h3>Барбекю</h3>
+          <p class="ingredients">Курица, бекон, соус барбекю, красный лук</p>
+          <p class="price">450</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="Мясная.png" alt="Мясная">
+          <h3>Мясная</h3>
+          <p class="ingredients">Пепперони, бекон, курица, говядина</p>
+          <p class="price">500</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="pizza" style="display: none;">
+          <img src="Песто с курицей.jpg" alt="Песто с курицей">
+          <h3>Песто с курицей</h3>
+          <p class="ingredients">Курица, соус песто, томаты, моцарелла</p>
+          <p class="price">520</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+
+        <!-- Фастфуд -->
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Чизбургер.png" alt="Чизбургер">
+          <h3>Чизбургер</h3>
+          <p class="ingredients">Говяжья котлета, сыр чеддер, салат, помидор, соус</p>
+          <p class="price">229</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Чикен Бургер.png" alt="Чикен Бургер">
+          <h3>Чикен Бургер</h3>
+          <p class="ingredients">Куриное филе, салат, помидор, соус</p>
+          <p class="price">250</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Чили Бургер.jpg" alt="Чили Бургер">
+          <h3>Чили Бургер</h3>
+          <p class="ingredients">Говяжья котлета, перец халапеньо, сыр, салат</p>
+          <p class="price">280</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Картофель фри.jpg" alt="Картофель фри">
+          <h3>Картофель фри</h3>
+          <p class="ingredients">Картофель, соль, специи</p>
+          <p class="price">120</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Стрипсы.png" alt="Стрипсы">
+          <h3>Стрипсы</h3>
+          <p class="ingredients">Куриное филе в хрустящей панировке, соус на выбор</p>
+          <p class="price">220</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Сырные палочки.jpg" alt="Сырные палочки">
+          <h3>Сырные палочки</h3>
+          <p class="ingredients">Моцарелла в хрустящей панировке, соус тар-тар</p>
+          <p class="price">180</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Куриные крылышки.png" alt="Куриные крылышки">
+          <h3>Куриные крылышки</h3>
+          <p class="ingredients">Куриные крылышки, специи, соус барбекю</p>
+          <p class="price">320</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Хот-дог.jpg" alt="Хот-дог">
+          <h3>Хот-дог</h3>
+          <p class="ingredients">Сосиска, булочка, кетчуп, горчица, маринованные огурцы</p>
+          <p class="price">150</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="fastfood" style="display: none;">
+          <img src="Буритто чикен.png" alt="Буритто чикен">
+          <h3>Буритто чикен</h3>
+          <p class="ingredients">Курица, рис, фасоль, овощи, соус</p>
+          <p class="price">280</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+
+        <!-- Салаты (9 позиций) -->
+        <div class="product" data-category="salads" style="display: none;">
+          <img src="Цезарь.png" alt="Цезарь">
+          <h3>Цезарь</h3>
+          <p class="ingredients">Салат романо, куриное филе, гренки, пармезан, соус цезарь</p>
+          <p class="price">379</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="salads" style="display: none;">
+          <img src="Греческий.jpg" alt="Греческий">
+          <h3>Греческий</h3>
+          <p class="ingredients">Помидоры, огурцы, перец, маслины, фета</p>
+          <p class="price">280</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="salads" style="display: none;">
+          <img src="Оливье.png" alt="Оливье">
+          <h3>Оливье</h3>
+          <p class="ingredients">Курица, картофель, морковь, горошек, яйцо, огурцы</p>
+          <p class="price">250</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="salads" style="display: none;">
+          <img src="Винегрет.jpg" alt="Винегрет">
+          <h3>Винегрет</h3>
+          <p class="ingredients">Свекла, морковь, картофель, горошек, огурцы</p>
+          <p class="price">180</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="salads" style="display: none;">
+          <img src="Капрезе.jpg" alt="Капрезе">
+          <h3>Капрезе</h3>
+          <p class="ingredients">Моцарелла, помидоры, базилик, соус песто</p>
+          <p class="price">320</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="salads" style="display: none;">
+          <img src="Нисуаз.jpg" alt="Нисуаз">
+          <h3>Нисуаз</h3>
+          <p class="ingredients">Тунец, яйцо, картофель, стручковая фасоль</p>
+          <p class="price">350</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="salads" style="display: none;">
+          <img src="Табуле.jpg" alt="Табуле">
+          <h3>Табуле</h3>
+          <p class="ingredients">Булгур, помидоры, огурцы, зелень, лимонный сок</p>
+          <p class="price">280</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+
+        <!-- Напитки (7 позиций) -->
+        <div class="product" data-category="drinks" style="display: none;">
+          <img src="Минеральная вода.jpg" alt="Минеральная вода">
+          <h3>Минеральная вода</h3>
+          <p class="ingredients">0,5л</p>
+          <p class="price">90</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="drinks" style="display: none;">
+          <img src="Добрый cola.png" alt="Добрый cola">
+          <h3>Добрый cola</h3>
+          <p class="ingredients">1л</p>
+          <p class="price">180</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="drinks" style="display: none;">
+          <img src="Сок.png" alt="Сок">
+          <h3>Сок</h3>
+          <p class="ingredients">1л</p>
+          <p class="price">250</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-category="drinks" style="display: none;">
+          <img src="Холодный зелёный чай.png" alt="Холодный зелёный чай">
+          <h3>Холодный зелёный чай</h3>
+          <p class="ingredients">0,5л</p>
+          <p class="price">150</p>
+          <div class="product-controls">
+            <div class="quantity-controls">
+              <button class="quantity-btn minus" disabled>−</button>
+              <input type="number" class="quantity-value" value="1" min="1" max="99">
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">В корзину</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-trigger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM1 2V4H3L6.6 11.59L5.25 14.04C5.09 14.32 5 14.65 5 15C5 16.1 5.9 17 7 17H19V15H7.42C7.28 15 7.17 14.89 7.17 14.75L7.2 14.63L8.1 13H15.55C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C20.96 5.34 21 5.17 21 5C21 4.45 20.55 4 20 4H5.21L4.27 2H1ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="currentColor"/>
+        </svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+
+      <div class="cart-overlay"></div>
+      <div class="cart-sidebar">
+        <div class="cart-header">
+          <h2>Корзина</h2>
+          <button class="close-cart">×</button>
+        </div>
+        <div id="cart-items"></div>
+        <div id="cart-total">
+          Итого: <span id="total-price">0</span>₽
+        </div>
+        <button id="order-button">Оформить заказ</button>
+      </div>
+    </section>
+
+    <section class="call-request" id="call-request-form" style="display:none;">
+      <h2>Заявка на звонок</h2>
+      <form>
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Телефон" required>
+        <button type="submit">Заказать звонок</button>
+      </form>
+      <p class="privacy">Мы не передаем данные 3-им лицам. Отправляя заявку, вы соглашаетесь с политикой обработки персональных данных</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="contacts">
+        <p>г. Мелитополь, проспект Богдана Хмельницкого, 18</p>
+        <p>Email: danilzyumkin@yandex.ru</p>
+        <p>Тел: +7(990)028-96-65</p>
+      </div>
+      <div class="copyright">© 2025 Курсовая работа</div>
+    </div>
+  </footer>
+
+  <!-- Форма заказа звонка -->
+  <div class="call-request-overlay"></div>
+  <div class="call-request-form">
+    <div class="form-header">
+      <h3>Заказать звонок</h3>
+      <button class="close-form">×</button>
+    </div>
+    <form id="call-form">
+      <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+      </div>
+      <div class="form-group">
+        <label for="phone">Номер телефона</label>
+        <input type="tel" id="phone" name="phone" required placeholder="+7(___)___-__-__" maxlength="16" minlength="11">
+      </div>
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+  </div>
+
+  <!-- Форма оформления заказа -->
+  <div class="order-form-overlay"></div>
+  <div class="order-form">
+    <div class="form-header">
+      <h3>Оформление заказа</h3>
+      <button class="close-order-form">×</button>
+    </div>
+    <form id="order-form">
+      <div class="form-group">
+        <label for="order-name">Ваше имя</label>
+        <input type="text" id="order-name" name="name" required placeholder="Введите ваше имя">
+      </div>
+      <div class="form-group">
+        <label for="order-phone">Номер телефона</label>
+        <input type="tel" id="order-phone" name="phone" required placeholder="+7(___)___-__-__" maxlength="16" minlength="11">
+      </div>
+      <div class="form-group">
+        <label for="order-address">Адрес доставки</label>
+        <textarea id="order-address" name="address" required placeholder="Введите адрес доставки"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="order-persons">Количество персон</label>
+        <input type="number" id="order-persons" name="persons" required min="1" max="10" value="1">
+      </div>
+      <div class="order-summary">
+        <h4>Ваш заказ</h4>
+        <div id="order-items-list"></div>
+        <div class="order-total">
+          Итого: <span id="order-total-price">0</span>₽
+        </div>
+      </div>
+      <button type="submit" class="submit-btn">Оформить заказ</button>
+    </form> 
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html> 

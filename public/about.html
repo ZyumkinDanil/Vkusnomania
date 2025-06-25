@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас — Вкусномания</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Вкусномания</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="actions.html">Акции</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+            </nav>
+            <button id="call-request-btn">Заказать звонок</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h1>О нас</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Добро пожаловать в Вкусноманию!</h2>
+                        <p>Мы предлагаем широкий выбор вкусных блюд с доставкой по Мелитополю. В нашем меню вы найдете роллы, пиццу, бургеры, салаты и многое другое.</p>
+                        
+                        <h3>Почему выбирают нас:</h3>
+                        <ul>
+                            <li>Быстрая доставка по городу</li>
+                            <li>Свежие продукты</li>
+                            <li>Большой выбор блюд</li>
+                            <li>Выгодные акции</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Контакты</h3>
+                        <p><strong>Адрес:</strong> г. Мелитополь, проспект Богдана Хмельницкого, 18</p>
+                        <p><strong>Телефон:</strong> +7(990)028-96-65</p>
+                        <p><strong>Email:</strong> danilzyumkin@yandex.ru</p>
+                        <p><strong>Время работы:</strong> 09:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-request" id="call-request-form" style="display:none;">
+            <h2>Заявка на звонок</h2>
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit">Заказать звонок</button>
+            </form>
+            <p class="privacy">Мы не передаем данные 3-им лицам. Отправляя заявку, вы соглашаетесь с политикой обработки персональных данных</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contacts">
+                <p>г. Мелитополь, проспект Богдана Хмельницкого, 18</p>
+                <p>Email: danilzyumkin@yandex.ru</p>
+                <p>Тел: +7(990)028-96-65</p>
+            </div>
+            <div class="copyright">© 2025 Курсовая работа</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

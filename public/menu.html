@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вкусномания — Меню</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Вкусномания</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="actions.html">Акции</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+      <button id="call-request-btn">Заказать звонок</button>
+    </div>
+  </header>
+  
+  <main>
+    <section class="menu-categories">
+      <div class="container">
+        <h1>Меню</h1>
+        <div class="categories">
+          <button class="category active" data-category="all">Все</button>
+          <button class="category" data-category="rolls">Роллы</button>
+          <button class="category" data-category="pizza">Пицца</button>
+          <button class="category" data-category="fastfood">Фастфуд</button>
+          <button class="category" data-category="salads">Салаты</button>
+          <button class="category" data-category="drinks">Напитки</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container products-grid">
+        <!-- Роллы -->
+        <div class="product" data-id="roll_1" data-category="rolls">
+          <img src="Филадельфия.png" alt="Филадельфия">
+          <h3>Филадельфия</h3>
+          <p class="price">350</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product" data-id="roll_2" data-category="rolls">
+          <img src="Калифорния с лососем.png" alt="Калифорния с лососем">
+          <h3>Калифорния с лососем</h3>
+          <p class="price">320</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+
+        <!-- Пицца -->
+        <div class="product" data-id="pizza_1" data-category="pizza">
+          <img src="Пепперони.jpg" alt="Пепперони">
+          <h3>Пепперони</h3>
+          <p class="price">450</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product" data-id="pizza_2" data-category="pizza">
+          <img src="Маргарита.jpg" alt="Маргарита">
+          <h3>Маргарита</h3>
+          <p class="price">400</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+
+        <!-- Фастфуд -->
+        <div class="product" data-id="fast_1" data-category="fastfood">
+          <img src="Чизбургер.png" alt="Чизбургер">
+          <h3>Чизбургер</h3>
+          <p class="price">220</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product" data-id="fast_2" data-category="fastfood">
+          <img src="Наггетсы.png" alt="Наггетсы">
+          <h3>Наггетсы</h3>
+          <p class="price">150</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+
+        <!-- Салаты -->
+        <div class="product" data-id="salad_1" data-category="salads">
+          <img src="Цезарь.png" alt="Цезарь">
+          <h3>Цезарь</h3>
+          <p class="price">280</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product" data-id="salad_2" data-category="salads">
+          <img src="Греческий.jpg" alt="Греческий">
+          <h3>Греческий</h3>
+          <p class="price">260</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+
+        <!-- Напитки -->
+        <div class="product" data-id="drink_1" data-category="drinks">
+          <img src="Минеральная вода.jpg" alt="Минеральная вода">
+          <h3>Минеральная вода</h3>
+          <p class="price">80</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product" data-id="drink_2" data-category="drinks">
+          <img src="Добрый cola.png" alt="Добрый cola">
+          <h3>Добрый cola</h3>
+          <p class="price">120</p>
+          <button class="add-to-cart">В корзину</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <div class="contacts">
+        <p>г. Мелитополь, проспект Богдана Хмельницкого, 18</p>
+        <p>Email: danilzyumkin@yandex.ru</p>
+        <p>Тел: +7(990)028-96-65</p>
+      </div>
+      <div class="copyright">© 2025 Курсовая работа</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 

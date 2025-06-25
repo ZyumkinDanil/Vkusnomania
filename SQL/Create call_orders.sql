@@ -1,0 +1,6 @@
+CREATE TABLE call_orders (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    phone VARCHAR(16),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

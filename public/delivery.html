@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вкусномания — Доставка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Вкусномания</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="actions.html">Акции</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="about.html">О нас</a></li>
+        </ul>
+      </nav>
+      <button id="call-request-btn">Заказать звонок</button>
+    </div>
+  </header>
+  <main>
+    <section class="delivery-section">
+      <div class="container">
+        <h1>Доставка</h1>
+        <div class="delivery-info">
+          <div class="info-card">
+            <h2>Время работы</h2>
+            <p>Мы доставляем с 09:00 до 21:00 без выходных</p>
+          </div>
+          <div class="info-card">
+            <h2>Стоимость доставки</h2>
+            <ul>
+              <li>При заказе от 1249 ₽ — доставка бесплатная</li>
+              <li>При заказе до 1249 ₽ — доставка 300 ₽</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h2>Зона доставки</h2>
+            <p>Мы осуществляем доставку по городу Мелитополь. Среднее время доставки по городу 15 минут. Общее время зависит от обьёма заказа.</p>
+          </div>
+          <div class="info-card">
+            <h2>Способы оплаты</h2>
+            <ul>
+              <li>Наличными курьеру</li>
+              <li>Перевод на карту</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="contacts">
+        <p>г. Мелитополь, проспект Богдана Хмельницкого, 18</p>
+        <p>Email: danilzyumkin@yandex.ru</p>
+        <p>Тел: +7(990)028-96-65</p>
+        <div class="socials"></div>
+      </div>
+      <div class="copyright">© 2025 Курсовая работа</div>
+    </div>
+  </footer>
+  <div class="delivery-form-container">
+    <h2>Оформление заказа</h2>
+    <form id="delivery-form">
+      <div class="form-group">
+        <label for="name">Имя*:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Телефон*:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Адрес доставки*:</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="payment">Способ оплаты*:</label>
+        <select id="payment" name="payment" required>
+          <option value="cash">Наличными при получении</option>
+          <option value="card">Картой при получении</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="comment">Комментарий к заказу:</label>
+        <textarea id="comment" name="comment"></textarea>
+      </div>
+      <div class="order-summary">
+        <h3>Ваш заказ</h3>
+        <div id="order-items"></div>
+        <div class="total">
+          <span>Итого:</span>
+          <span id="order-total"></span>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="submit-order">Подтвердить заказ</button>
+        <button type="button" class="cancel-order">Отмена</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
